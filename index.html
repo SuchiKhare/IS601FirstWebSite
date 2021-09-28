@@ -6,6 +6,62 @@
 	<body>
 		<h1>My first Website- updated for premium customer</h1>
 		<h1>Thank you for the wonderful lecture</h1>
+
+                 <font color="#0000ff"><h1>(1) Making Director , checking present working directory </h1></font>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	mkdir FirstWebsite</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	cd FirstWebsite</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	pwd</h2>
+					<font color="#0000ff"><h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Initialized emtpty Git Repository  ,Open new file using vi command Checking the git status</h2></font>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git init</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	vi index.html</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git status</h2>
+		<font color="#0000ff"><<h1>(2) Add the file for a particular change and Commit  (Add and Commit) </h1></font>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git add index.html</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git status</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git commit -m "created index file"</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git status</h2>
+		<font color="#0000ff"><h1>(3) creating a branch, updating the index.html, adding and commit - b says new branch </h1></font>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git checkout -b UpdatePage</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	vi index.html</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git add index.html</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git commit -m "updated the body-h1-element"</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git status</h2>
+		<font color="#0000ff"><h1><h1>(4)checkout master and view index.html, it does not have the updates/changes we made in step3 but the UpdatePage branch has the changes:</h1></font>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git checkout master</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git status</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	vi index.html</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git checkout Update page</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	vi index.html</h2>
+		<font color="#0000ff"><h1><h1>(5) Merge from branch UpdatePage to main branch, Merge shows Fast-Forward thru the commit into this branch </h1></font>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git checkout master</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git merge UpdatePage</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	vi index.html</h2>
+					<font color="#0000ff"><h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp We have this repository on the local deskop and we need in the github. To know who made commits - One time activity</h2></font>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git config --global user.name "SuchiKhare"</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git config --global user.email "sk368@njit.edu"</h2>
+		<font color="#0000ff"><h1><h1>(6) Created the repository using plus in the github named IS601FirstWebSite </h1></font>
+		<font color="#0000ff"><h1><h1>(7) Push an existing directory to the repository  </h1></font>
+		            <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git remote add origin https://github.com/SuchiKhare/IS601FirstWebSite</h2>
+		<font color="#0000ff"><h1><h1>(8) git remote show </h1></font>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git remote show </h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git remote show origin   (this will show FETCH , PUSH , origin name has nothing to do , we can change that also )</h2>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	pwd</h2>
+		<font color="#0000ff"><h1><h1>(9) Goto Repository - here i can see the master has the changes in index.html </h1></font>
+		<font color="#0000ff"><h1><h1>(10) Goto Repository Settings and (Developer setting - so that u can logon to github accoount )
+            Generate Token - no expiration - Generate.Token is not shown again , thst is one time.</h1></font>
+					<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git push origin master SuchiKhare ghp_aK1yaJUGFqbIHjYkns4ytQnwoDhuF4c7UCD</h2>
+		<font color="#0000ff"><h1><h1>(11) Refresh the repository , we shall have index.html</h1></font>
+		<font color="#0000ff"><h1><h1>(12)Setting for the repository and section called Pages (this run html , css not python etc)
+            Master branch - Save - it will URL but URL is not available as it is not yet publish </h1></font>
+			<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git status</h2>
+			<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	vi readme.md <font color="#0000ff">(paste the url inside the readme)</font></h2>
+			<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git add readme.md</h2>
+			<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git commit -m "added Readme website link"</h2>
+			<h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	git push origin master</h2>
+
+
+
+
   	
 	</body>
 </html>
